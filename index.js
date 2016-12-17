@@ -10,15 +10,12 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+	reponse.writeHead(200, {'Content-Type': 'application/json'})
+	response.end({'status' : 'live'});
 });
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-app.post('/test', function(req, res){
-    console.dir(req.body);
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end('thanks');
+app.post('/test', function(request, response){
+	console.dir(request.body);
+	response.writeHead(200, {'Content-Type': 'application/json'});
+	response.end({'test' : true});
 });

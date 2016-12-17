@@ -11,11 +11,11 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
 	reponse.writeHead(200, {'Content-Type': 'application/json'})
-	response.end({'status' : 'live'});
+	response.end(JSON.stringify({'online' : true}));
 });
 
 app.post('/test', function(request, response){
 	console.dir(request.body);
 	response.writeHead(200, {'Content-Type': 'application/json'});
-	response.end({'test' : true});
+	response.end(JSON.stringify({'test' : true}));
 });

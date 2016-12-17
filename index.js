@@ -17,4 +17,8 @@ app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-
+app.post('/test', function(req, res){
+    console.dir(req.body);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end('thanks');
+});

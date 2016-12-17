@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "npm": "4.0.5",
     "express": "4.13.3",
     "body-parser": "4.13.3"
   },

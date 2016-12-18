@@ -6,10 +6,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npm install npm"
   },
   "dependencies": {
-    "npm": "4.0.5",
     "express": "4.13.3",
     "body-parser": "4.13.3"
   },

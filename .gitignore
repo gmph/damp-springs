@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Typescript created JS files
+*.js
+
+# Allow underscore JS files
+!_*.js

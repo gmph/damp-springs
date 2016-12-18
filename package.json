@@ -6,8 +6,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "tsc",
-    "start": "node index.js"
+    "start": "tsc && node index.js"
   },
   "dependencies": {
     "express": "4.13.3",

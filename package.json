@@ -5,9 +5,9 @@
     "node": "6.6.0",
     "npm": "4.0.5"
   },
-  "main": "./app/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "npm install && tsc && node ./index.js"
+    "start": "npm install && tsc && node index.js"
   },
   "dependencies": {
     "@types/node": "^6.0.52",
